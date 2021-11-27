@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/fragment_container"
+    tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/border_button"
+        android:elevation="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        app:cnb_menuResource="@menu/menu_bottom"
+        android:layout_margin="@dimen/_10ssp"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
